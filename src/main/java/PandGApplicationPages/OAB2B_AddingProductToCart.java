@@ -192,13 +192,15 @@ public class OAB2B_AddingProductToCart
 		
 		addPurchaseOrder().clear();
 		Random ram = new Random();
-		int num= ram.nextInt(1111111);
-		addPurchaseOrder().sendKeys("1234"+num + Keys.ENTER);
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+		int num= ram.nextInt(111111);
+		addPurchaseOrder().sendKeys("12345"+num);
+		addPurchaseOrder().sendKeys(Keys.ENTER);
+		//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 		
 		//Closing confirmation Pop up
-		confirmation_Popup().click();
-		confirmation_Popup().sendKeys(Keys.ENTER);
+			confirmation_Popup().click();
+			addPurchaseOrder().sendKeys(Keys.ENTER);
+			
 		
 		//Verify Truck Wrapper
 		
