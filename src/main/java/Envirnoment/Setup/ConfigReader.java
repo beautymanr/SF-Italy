@@ -62,6 +62,14 @@ public class ConfigReader
 	{
 		return pro.getProperty("selectDelivery");
 	}
+	public String getProductMixtureClick()
+	{
+		return pro.getProperty("productMixtureClick");
+	}
+	public String getProductMixtureSelect()
+	{
+		return pro.getProperty("productMixtureSelect");
+	}
 	//Shopping Cart Objects 
 	public String getgoCart() 
 	{
@@ -130,4 +138,90 @@ public class ConfigReader
 	{
 		return pro.getProperty("pallet");
 	}
+	//Purchase Summary page
+	public String getbillingSection()
+	{
+		return pro.getProperty("billingSection");
+	}
+	
+	public String getdeliveryAddress()
+	{
+		return pro.getProperty("deliveryAddress");
+	}
+	
+	public String getdeliveryDetails()
+	{
+		return pro.getProperty("deliveryDetails");
+	}
+	
+	public String getexcelSummary()
+	{
+		return pro.getProperty("excelSummary");
+	}
+	
+	public String getpdfSummary()
+	{
+		return pro.getProperty("pdfSummary");
+	}
+	
+	public String getsubTotal()
+	{
+		return pro.getProperty("subTotal");
+	}
+	
+	public String getagreementCheckbox()
+	{
+		return pro.getProperty("agreementCheckbox");
+	}
+	
+	public String getmakeOrder()
+	{
+		return pro.getProperty("makeOrder");
+	}
+	
+	public String getcheckPriceHeader()
+	{
+		return pro.getProperty("checkPriceHeader");
+	}
+	
+	public String getarrivalDate()
+	{
+		return pro.getProperty("arrivalDate");
+	}
+	
+	public String getverifyPriceSection()
+	{
+		return pro.getProperty("verifyPriceSection");
+	}
+	
+	public String getsubTotalSection()
+	{
+		return pro.getProperty("subTotalSection");
+	}
+	
+	public String gettaxSection()
+	{
+		return pro.getProperty("taxSection");
+	}
+	
+	public String getgrandTotal()
+	{
+		return pro.getProperty("grandTotal");
+	}
+	
+	public String getorderSuccessMessage()
+	{
+		return pro.getProperty("orderSuccessMessage");
+	}
+	
+	public String getreturnStore()
+	{
+		return pro.getProperty("returnStore");
+	}
+	
+	public String getgoOut()
+	{
+		return pro.getProperty("goOut");
+	}
+	
 }

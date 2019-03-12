@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71001" started-at="2019-03-11T13:26:06Z" finished-at="2019-03-11T13:27:17Z">
+  <suite name="Default suite" duration-ms="450850" started-at="2019-03-12T11:32:57Z" finished-at="2019-03-12T11:40:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71001" started-at="2019-03-11T13:26:06Z" finished-at="2019-03-11T13:27:17Z">
+    <test name="Default test" duration-ms="450850" started-at="2019-03-12T11:32:57Z" finished-at="2019-03-12T11:40:28Z">
       <class name="PandGApplicationTestCases.OTCOM_PriceVerification">
-        <test-method status="PASS" signature="startBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PandGApplicationTestCases.OTCOM_PriceVerification@78c730]" name="startBrowser" duration-ms="70961" started-at="2019-03-11T13:26:06Z" data-provider="loginData" finished-at="2019-03-11T13:27:17Z">
+        <test-method status="PASS" signature="startBrowser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PandGApplicationTestCases.OTCOM_PriceVerification@78c730]" name="startBrowser" duration-ms="450796" started-at="2019-03-12T11:32:57Z" data-provider="loginData" finished-at="2019-03-12T11:40:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://mx.rc.uat.online.pg.com]]>
+                <![CDATA[https://mx.rc.uat.online.pg.com/]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[marek.wojtowicz@directpl.com]]>
+                <![CDATA[b2batestselenium.im@pg.com]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Pg1234567]]>
+                <![CDATA[fpnxtwSp9C2DTFC6]]>
               </value>
             </param>
           </params>

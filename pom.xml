@@ -10,7 +10,7 @@
   <build>
   <resources>
   <resource>
-  <directory>/src/main/Resources/</directory>
+  <directory>/EndToEndDigitalization/src/main/java/Resources</directory>
         <filtering>true</filtering>
         </resource>
       </resources>

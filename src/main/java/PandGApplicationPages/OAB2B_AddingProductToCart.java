@@ -70,7 +70,7 @@ public class OAB2B_AddingProductToCart
 		return driver.findElement(By.xpath(reader.getaddPurchaseOrder()));
 	}
 	public WebElement confirmation_Popup() {
-		return driver.findElement(By.cssSelector(reader.getconfirmation_Popup()));
+		return driver.findElement(By.xpath(reader.getconfirmation_Popup()));
 	}
 	public WebElement truckwrapper() {
 		return driver.findElement(By.xpath(reader.gettruckwrapper()));
@@ -191,15 +191,16 @@ public class OAB2B_AddingProductToCart
 		//Entering Purchase Order Number
 		
 		addPurchaseOrder().clear();
-		Random ram = new Random();
-		int num= ram.nextInt(111111);
-		addPurchaseOrder().sendKeys("12345"+num);
-		addPurchaseOrder().sendKeys(Keys.ENTER);
-		//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
+		long num = (long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L;
+        System.out.println(" num\"s >>> "+num);
+            addPurchaseOrder().sendKeys(String.valueOf(num));
+            addPurchaseOrder().sendKeys(Keys.ENTER);
+
 		
 		//Closing confirmation Pop up
-			confirmation_Popup().click();
-			addPurchaseOrder().sendKeys(Keys.ENTER);
+			confirmation_Popup().sendKeys(Keys.ENTER);
+			//addPurchaseOrder().sendKeys(Keys.ENTER);
+			
 			
 		
 		//Verify Truck Wrapper

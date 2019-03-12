@@ -27,6 +27,7 @@ public class Base
 			System.setProperty("webdriver.chrome.driver", reader.getchromePath());
 			driver = new ChromeDriver();
 			driver.manage().deleteAllCookies();
+		
 		}
 		else if(browswerName.equals("firefox"))
 		{
@@ -67,7 +68,13 @@ public class Base
 	}
 	public static void waitForPage()
 	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) 
+		{
+			
+			e.printStackTrace();
+		}
 	}
 	public WebDriver closeBroswer()
 	{

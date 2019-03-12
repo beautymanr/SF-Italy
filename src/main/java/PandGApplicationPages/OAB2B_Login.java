@@ -45,5 +45,20 @@ public class OAB2B_Login
 		log.info("Clicked on go");
 		return driver.findElement(By.xpath(reader.getEnter()));
 	}
+	/*public OAB2B_Login(String go, String Email, String Password) 
+	{
+		try {
+			getEmail().sendKeys(Email);
+			Thread.sleep(5000);
+			getPassword().sendKeys(Password);
+			Thread.sleep(5000);
+			getGO().click();
+			
+		} catch (InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		
+	}*/
 
 }

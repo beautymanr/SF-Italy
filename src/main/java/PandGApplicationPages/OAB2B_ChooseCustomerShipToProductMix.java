@@ -39,9 +39,12 @@ public class OAB2B_ChooseCustomerShipToProductMix
 	{
 		return driver.findElements(By.xpath(reader.getSelectDelivery()));
 	}
-
-	
-	
+	public WebElement clickProductMixture() {
+		return driver.findElement(By.cssSelector(reader.getProductMixtureClick()));
+	}
+	public List<WebElement> getProductMixtureSelect() {
+		return driver.findElements(By.xpath(reader.getProductMixtureSelect()));
+	}
 	public void selectClient() throws InterruptedException
 	{
 		client_Click().click();
@@ -89,6 +92,40 @@ public class OAB2B_ChooseCustomerShipToProductMix
 		    }
 		    log.info("Select Delivery !!!!!");
  }
+	
+	
+	public void selectProductMixture() throws InterruptedException
+    {
+		Thread.sleep(3000);
+		if(clickProductMixture().isDisplayed())
+		{
+			clickProductMixture().click();
+		    List<WebElement> productMixture = (List<WebElement>) getProductMixtureSelect();
+		    
+		    for(int i=0;i<productMixture.size();i++)
+		    {
+		          
+		          WebElement proMixture =productMixture.get(i);
+		          
+		          String innerText = proMixture.getAttribute("innerText");
+		          
+		          if(innerText.contentEquals("DETERGENTS AND HOME CARE"))
+		                
+		          {
+		        	  System.out.println("Clicked");
+		        	  proMixture.click();
+		                break;
+		          }
+		    }
+		    log.info("Select Delivery !!!!!");
+		}
+		else {
+			Thread.sleep(5000);
+			verifyHomePage();
+		}
+		
+ }
+	
 	public void verifyHomePage() 
 	{
 		Assert.assertEquals(driver.getTitle(), "Home page");	
