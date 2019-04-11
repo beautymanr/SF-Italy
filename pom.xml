@@ -10,7 +10,7 @@
   <build>
   <resources>
   <resource>
-  <directory>/EndToEndDigitalization/src/main/java/Resources</directory>
+  <directory>EndToEndDigitalization/src/main/java/Resources</directory>
         <filtering>true</filtering>
         </resource>
       </resources>
@@ -28,11 +28,16 @@
   </plugins>
    </build>
   <dependencies>
+  <dependency> 
+<groupId>com.googlecode.json-simple</groupId> 
+<artifactId>json-simple</artifactId> 
+<version>1.1.1</version> 
+</dependency> 
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

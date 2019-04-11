@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="PandGApplicationTestCases.OTCOM_PriceVerification">
+      <class name="TestCases.OTCOMPriceVerification">
         <methods>
-          <include name="startBrowser" invocation-numbers="0"/>
+          <include name="startBrowser"/>
         </methods>
-      </class> <!-- PandGApplicationTestCases.OTCOM_PriceVerification -->
+      </class> <!-- TestCases.OTCOMPriceVerification -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

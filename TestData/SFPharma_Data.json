@@ -1,0 +1,28 @@
+[
+{
+   "SalesForceLogin":
+       {
+          "URL": "https://pgitpharma--autotest.lightning.force.com",
+          "UserName1": "italypharma_adv@pg.com.autotest",
+          "UserName2": "italypharma_sr@pg.com.autotest",
+          "UserName3": "italypharma_teamldr@pg.com.autotest",
+          "Password": "Test1234",
+          "SearchReports": "Reports",
+          "SearchLista": "Lista"
+          "SearchDashboards": "Dashboards",
+          "SearchStatus": "Status",
+          "SearchFreq": "Freq",
+          "SearchClienti": "Clienti",
+          "SearchCalendario": "Calendario",
+          "SearchOggi": "Oggi",
+          "SearchPharma": "Pharma",
+          "SearchLightning": "Lightning",
+          "Select_RetailsGolden": "Retails Golden",
+          "Select_Completata": "Completata",
+          "Select_SiA": "Si, Arnold",
+          "Select_FR": "Forse, ripassare",
+          "Select_scsg": "Si – consegna in Q2",
+          "Test": "Test Automation"
+     }
+     }
+  ]  
